@@ -1,7 +1,14 @@
 {
   "name": "hello-world-react",
-  "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "version": "0.0.1",
   "private": true,
+  "description": "Hello World React Project",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {},
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
