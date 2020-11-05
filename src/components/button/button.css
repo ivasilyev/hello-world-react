@@ -1,20 +1,5 @@
-
-.HelloWorld {
-    margin: 3vh auto;
-    min-height: 2vmin;
-}
-
-.HelloWorld__container {
-    /*
-    align-items: center;
-    display: flex;
-    justify-content: center;
-     */
-    margin: 3vh auto;
-}
-
-.HelloWorld__button__container {
-    margin: auto;
+.button__container {
+    margin: 2vh auto;
     border: none;
     border-radius: 12px;
     text-align: center;
@@ -27,7 +12,7 @@
     0px 11px 5px 1px rgba(0,0,0,0.12);
 }
 
-.HelloWorld__button {
+.button {
     border: inherit;
     border-radius: inherit;
     padding: calc(var(--main-font-size) - 1.25vmin) calc(var(--main-font-size) - 1vmin);
@@ -38,12 +23,12 @@
     box-shadow: 0 9px var(--color-blue-darkest);
 }
 
-.HelloWorld__button:hover {
+.button:hover {
     background-color: var(--color-blue-common);
     box-shadow: 0 9px var(--color-blue-darker);
 }
 
-.HelloWorld__button:active {
+.button:active {
     background-color: var(--color-blue-common);
     text-shadow: 1px 1px 1px grey;
     box-shadow: 0 4px var(--color-blue-darker);

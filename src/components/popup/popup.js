@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
 import './popup.css';
+import {Button} from "../button/button";
 
 export class Popup extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
-            <div className='popup'>
-                <div className='popup__inner'>
-                    <h1>{this.props.text}</h1>
-                    <button onClick={this.props.closePopup}>close me</button>
-                </div>
+            <div className='popup__outer'>
+                <h1>{this.props.header}</h1>
+                <p>{this.props.text}</p>
+                <Button action={this.props.action} text='Close' />
             </div>
         );
     }

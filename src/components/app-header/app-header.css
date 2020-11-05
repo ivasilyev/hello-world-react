@@ -1,0 +1,47 @@
+.App__header {
+}
+
+.App__header__logo__pulser {
+    pointer-events: none;
+}
+
+.App__header__logo__spinner {
+    pointer-events: none;
+}
+
+@keyframes App__header__logo__pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes App__header__logo__spin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App__header__logo__pulser {
+        animation: App__header__logo__pulse 2s infinite;
+    }
+    .App__header__logo__spinner {
+        animation: App__header__logo__spin 20s linear infinite;
+    }
+
+}
+
+.App__header__link {
+    color: #61dafb;
+}

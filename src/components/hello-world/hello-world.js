@@ -1,16 +1,16 @@
 import React from 'react';
 import './hello-world.css';
+import {Button} from '../button/button'
 
-export const HelloWorld = () => {
+export const HelloWorld = (x = '') => {
     function sayHello() {
-        alert('Hello, World!');
+        alert(`Hello, World${x.length > 0  ? '!' : ''}`);
     }
 
     return (
         <div className="HelloWorld">
-            <div className={'HelloWorld__button__container'}>
-                <button className={'HelloWorld__button'} onClick={sayHello}>Click me!</button>
-            </div>
+            View simple alert:
+            <Button text={'Click me!'} action={sayHello} />
         </div>
     );
 };

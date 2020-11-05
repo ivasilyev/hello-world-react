@@ -1,0 +1,35 @@
+.popup__outer {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, 25%);
+    top: 0;
+    left: 50%;
+    width: 66vw;
+    min-width: 15vw;
+    height: calc(20vh + 20vmin);
+    margin: 0;
+    z-index: 1;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fadeIn 500ms ease-out;
+}
+
+@keyframes fadeIn {
+    from  {
+        opacity: 0;
+        transform: translate(-50%, -100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.popup__inner {
+    margin: 0;
+    transform: scale(0.7);
+    z-index: 2;
+}
